@@ -22,4 +22,4 @@ for guessTaken in range(1,7):
 if guess == secreteNumber:
   print("Good job, " + str(guess) + " was the correct number.")
 else:
-  print("Noooo, the correct number was " + str(guess) + ".")
+  print("Nooooo, the correct number was " + str(guess) + ".")
