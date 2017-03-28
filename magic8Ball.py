@@ -10,6 +10,4 @@ messages = ['It is certain',
             'Very doubtful'
             ]
 
-r = random.randint(0, 8)
-fortune = messages[r]
-print(fortune)
+print(messages[random.randint(0,len(messages)-1)])
