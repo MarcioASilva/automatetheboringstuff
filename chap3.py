@@ -122,25 +122,50 @@
 # else:
 #   print('Nope. The number I was thinking of was ' + str(number))
 
+import random
+def getAnswer(answerNumber):
+if answerNumber == 1:
+  return 'It is certain'
+       elif answerNumber == 2:
+           return 'It is decidedly so'
+       elif answerNumber == 3:
+           return 'Yes'
+       elif answerNumber == 4:
+           return 'Reply hazy try again'
+       elif answerNumber == 5:
+           return 'Ask again later'
+       elif answerNumber == 6:
+           return 'Concentrate and ask again'
+       elif answerNumber == 7:
+           return 'My reply is no'
+       elif answerNumber == 8:
+           return 'Outlook not so good'
+       elif answerNumber == 9:
+           return 'Very doubtful'
+
+r = random.randint(1, 9)
+fortune = getAnswer(r)
+print(fortune)
+
 ##############
-def collatz(number):
-  while number != 1:
-    if number == 1:
-      break
+# def collatz(number):
+#   while number != 1:
+#     if number == 1:
+#       break
 
-    elif number % 2 == 1:
-      print(3 * number + 1)
-      number = 3 * number + 1
+#     elif number % 2 == 1:
+#       print(3 * number + 1)
+#       number = 3 * number + 1
 
-    elif number % 2 == 0:
-      print(number // 2)
-      number = number // 2
+#     elif number % 2 == 0:
+#       print(number // 2)
+#       number = number // 2
 
-while True:
-  try:
-    print('Enter a number:')
-    number = int(input())
-    number = collatz(number)
+# while True:
+#   try:
+#     print('Enter a number:')
+#     number = int(input())
+#     number = collatz(number)
 
-  except ValueError:
-    print('Value entered was not an interger')
+#   except ValueError:
+#     print('Value entered was not an interger')
